@@ -47,8 +47,8 @@ const isValidTile = function(val) {
   return (validTiles[val] || typeof val === 'number');
 };
 
-const convertArrayToText = function(array) {
-  return this.array.map((row) => {
+const convertToText = function(array) {
+  return array.map((row) => {
     return row.join(' ');
   }).join('\n')
 }
