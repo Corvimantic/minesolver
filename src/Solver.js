@@ -11,7 +11,7 @@ Solver.prototype.solveField = function(newField) {
 
 Solver.prototype.printSolution = function() {
   console.log(
-    field.map((row) => {
+    this.field.map((row) => {
       return row.join(' ');
     }).join('\n')
   );
