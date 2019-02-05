@@ -5,17 +5,8 @@ const Solver = function() {
 Solver.prototype.solveField = function(newField) {
   this.field = newField;
   this.scanField();
-  this.printSolution();
   return this.field;
 };
-
-Solver.prototype.printSolution = function() {
-  console.log(
-    this.field.map((row) => {
-      return row.join(' ');
-    }).join('\n')
-  );
-}
 
 Solver.prototype.scanField = function() {
   for (var i = 0; i < this.field.length; i++) {
