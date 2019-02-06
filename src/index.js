@@ -13,9 +13,12 @@ $('#solve').click((e) => {
 
 const displaySolution = function(solution) {
   const field = convertToText(solution);
+  $('#error').hide();
   $('#solution-area').show();
   $('#solution').text(field);
 };
 
 const displayError = function() {
+  $('#error').show();
+  $('#solution-area').hide();
 };
