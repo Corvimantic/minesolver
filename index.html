@@ -13,14 +13,17 @@
   <p>
     Click "Solve" to receive your next steps.
   </p>
-  <textarea id="input" class="field-display" rows="8">
+  <textarea id="input" rows="8">
 M 1 0 0
 1 2 1 1
 ? ? ? ?
 ? ? ? ?
   </textarea>
   <button id="solve">Solve</button>
-  <div id="solution"></div>
+  <div id="solution-area">
+    <p>Your solution is below. The spots with C are safe to click.</p>
+    <div id="solution"></div>
+  </div>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="src/Solver.js"></script>

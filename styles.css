@@ -1,3 +1,12 @@
-.field-display {
+#input {
   font-family: Courier New;
+}
+
+#solution {
+  font-family: Courier New;
+  white-space: pre-wrap;
+}
+
+#solution-area {
+  display: none;
 }
