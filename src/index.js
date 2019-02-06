@@ -1,7 +1,7 @@
 const solver = new Solver;
 
 $('#solve').click((e) => {
-  const input = $('#input').text();
+  const input = $('#input').val();
   const field = convertToArray(input);
   if (isValidArray(field)) {
     const solution = solver.solveField(field);
